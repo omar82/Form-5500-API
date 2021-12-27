@@ -13,7 +13,7 @@ The base URL and patters is as follows;
 
 SEARCH_QUERY : <tt>goldman sachs</tt>
 
-https://www.data-mining.co.uk/api_test/goldman%20sachs
+<tt>https://www.data-mining.co.uk/api_test/goldman%20sachs</tt>
 
 This is a basic endpoint that will return the following JSON
 <pre>
