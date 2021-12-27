@@ -1,21 +1,22 @@
 # Form-5500-API
-Currently the API gives access to c.9.9 million US corporate retirement plan filings with details about the organaization, participants, assets, investment, service providers, fees and a more.
+
+Currently the API gives access to +9 million US corporate retirement plan filings with details about the organaization, participants, assets, investment, service providers, fees and a more.
 
 The API is organized around REST.
 
-Further information can be found on https://www.data-mining.co.uk
+Further information can be found on <tt>https://www.data-mining.co.uk</tt>
 
 The base URL and patters is as follows;
 
-<b>https://www.data-mining.co.uk/api/{API_KEY}/{SEARCH_QUERY}</b>
+<tt>https://www.data-mining.co.uk/api/{API_KEY}/{SEARCH_QUERY}</tt>
 
-API KEY: <b>721937f76ee4118d05d4268531b648ae</b>
-Example Search Query : <b>goldman sachs</b>
+API_KEY : <tt>721937f76ee4118d05d4268531b648ae</tt>
+
+SEARCH_QUERY : <tt>goldman sachs</tt>
 
 https://www.data-mining.co.uk/api/721937f76ee4118d05d4268531b648ae/goldman%20sachs
 
-This will return the following JSON
-
+This is a basic endpoint that will return the following JSON
 <pre>
 [
     {
