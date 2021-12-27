@@ -7,10 +7,10 @@ Further information can be found on https://www.data-mining.co.uk
 
 The base URL and patters is as follows;
 
-<code>https://www.data-mining.co.uk/api/{API_KEY}/{SEARCH_QUERY}</code>
+<b>https://www.data-mining.co.uk/api/{API_KEY}/{SEARCH_QUERY}</b>
 
-API KEY: <code>721937f76ee4118d05d4268531b648ae</code>
-Example Search Query : <code>goldman sachs</code>
+API KEY: <b>721937f76ee4118d05d4268531b648ae</b>
+Example Search Query : <b>goldman sachs</b>
 
 https://www.data-mining.co.uk/api/721937f76ee4118d05d4268531b648ae/goldman%20sachs
 
