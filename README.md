@@ -88,3 +88,24 @@ This is a basic endpoint that will return the following JSON
     ]
 }
 </pre>
+
+<hr>
+
+<strong>Node JS</strong>
+<pre>
+var axios = require("axios").default;
+
+var options = {
+  method: 'GET',
+  url: 'https://www.data-mining.co.uk/api_test/goldman%20sachs',
+  headers: {
+    'Key': 'form-5500-data.TEST',
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+</pre>
