@@ -16,7 +16,7 @@ https://www.data-mining.co.uk/api/721937f76ee4118d05d4268531b648ae/goldman%20sac
 
 This will return the following JSON
 
-<pre style='background:black;color:white;'>
+<pre>
 [
     {
         "name": "GOLDMAN SACHS & CO. LLC HEALTH & WELFARE PLAN",
