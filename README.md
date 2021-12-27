@@ -90,9 +90,10 @@ This is a basic endpoint that will return the following JSON
 </pre>
 
 
-<strong>Code Snippets</strong>
+<h2>Code Snippets</h2>
 
-<tt>Node JS</tt>
+<strong>Node JS</strong>
+
 <pre>
 var axios = require("axios").default;
 
