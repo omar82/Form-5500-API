@@ -6,3 +6,5 @@ Currently the API gives access to c.9.9 million US corporate retirement plan fil
 The API is organized around REST.
 
 Further information can be found on https://www.data-mining.co.uk
+
+<code>https://www.data-mining.co.uk/api/{API_KEY}/{SEARCH_QUERY}</code>
