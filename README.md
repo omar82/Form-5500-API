@@ -14,7 +14,7 @@ Example Search Query : <code>goldman sachs</code>
 
 https://www.data-mining.co.uk/api/721937f76ee4118d05d4268531b648ae/goldman%20sachs
 
-The will return the following JSON
+This will return the following JSON
 
 <code>
 [
