@@ -8,106 +8,44 @@ Further information can be found on <tt>https://www.data-mining.co.uk</tt>
 
 The base URL and patters is as follows;
 
-<tt>https://www.data-mining.co.uk/api_test/{SEARCH_QUERY}</tt>
+<tt>https://www.data-mining.co.uk/api/{API_KEY}/{EIN}</tt>
+<tt>API_KEY: 85c937c37e91d24c55ff4b47435dec9f</tt>
+<tt>EIN: Employer Identification Number</tt>
 
+EXAMPLE:
+<tt>https://data-mining.co.uk/api/7c42774df07cf3e08e52708603a9731c/742497109</tt>
 
-SEARCH_QUERY : <tt>goldman sachs</tt>
-
-<tt>https://www.data-mining.co.uk/api_test/goldman%20sachs</tt>
 
 This is a basic endpoint that will return the following JSON
 <pre>
-{
-    "size bytes": 2007,
-    "ttfb ms": 39,
-    "results #": 3,
-    "data out": [
-        {
-            "name": "GOLDMAN SACHS & CO. LLC HEALTH & WELFARE PLAN",
-            "plan_sponsor": "GOLDMAN SACHS & CO. LLC",
-            "address_line_1": "200 WEST STREET 19 FLOOR",
-            "address_line_2": "",
-            "zip": "10282",
-            "ein": "135108880",
-            "phone": "2129022001",
-            "admin_person": "",
-            "tax_year_begin": "2018-01-01",
-            "tax_year_end": "2018-12-31",
-            "sector_level_1": "Finance and Insurance",
-            "sector_level_2": "Securities, Commodity Contracts, and Other Financial Investments and Related ActivitiesT",
-            "sector_level_3": "Securities and Commodity Contracts Intermediation and BrokerageT",
-            "city": "New York",
-            "state": "NY",
-            "plan_type": "Single-Employer Plan",
-            "plan_inception": "1970-01-01",
-            "plan_catagory": "Welfare Benefit",
-            "assets": null
-        },
-        {
-            "name": "GOLDMAN SACHS & CO. LLC HEALTH & WELFARE PLAN",
-            "plan_sponsor": "GOLDMAN SACHS & CO. LLC",
-            "address_line_1": "200 WEST STREET, FLOOR 19",
-            "address_line_2": "",
-            "zip": "10282",
-            "ein": "135108880",
-            "phone": "2129022001",
-            "admin_person": "",
-            "tax_year_begin": "2019-01-01",
-            "tax_year_end": "2019-12-31",
-            "sector_level_1": "Finance and Insurance",
-            "sector_level_2": "Securities, Commodity Contracts, and Other Financial Investments and Related ActivitiesT",
-            "sector_level_3": "Securities and Commodity Contracts Intermediation and BrokerageT",
-            "city": "New York",
-            "state": "NY",
-            "plan_type": "Single-Employer Plan",
-            "plan_inception": "1970-01-01",
-            "plan_catagory": "Welfare Benefit",
-            "assets": null
-        },
-        {
-            "name": "GOLDMAN SACHS & CO. LLC HEALTH & WELFARE PLAN",
-            "plan_sponsor": "GOLDMAN SACHS & CO. LLC",
-            "address_line_1": "200 WEST STREET, FLOOR 19",
-            "address_line_2": "",
-            "zip": "10282",
-            "ein": "135108880",
-            "phone": "8012127541",
-            "admin_person": "",
-            "tax_year_begin": "2020-01-01",
-            "tax_year_end": "2020-12-31",
-            "sector_level_1": "Finance and Insurance",
-            "sector_level_2": "Securities, Commodity Contracts, and Other Financial Investments and Related ActivitiesT",
-            "sector_level_3": "Securities and Commodity Contracts Intermediation and BrokerageT",
-            "city": "New York",
-            "state": "NY",
-            "plan_type": "Single-Employer Plan",
-            "plan_inception": "1970-01-01",
-            "plan_catagory": "Welfare Benefit",
-            "assets": null
-        }
-    ]
-}
-</pre>
-
-
-<h2>Code Snippets</h2>
-
-<strong>Node JS</strong>
-
-<pre>
-var axios = require("axios").default;
-
-var options = {
-  method: 'GET',
-  url: 'https://www.data-mining.co.uk/api_test/goldman%20sachs',
-  headers: {
-    'Key': 'form-5500-data.TEST',
-  }
-};
-
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+[
+    {
+        "ID": "1",
+        "ACK_ID": "20210303174313NAL0000556787001",
+        "PLAN_NAME": "I HAVE A DREAM FOUNDATIONCOLORADO 403B PLAN",
+        "url_id": "IHAVEADREAM-FOUNDATION-COLORADO403-B-PLAN",
+        "SPONSOR_DFE_NAME": "I HAVE A DREAM FOUNDATION COLORADO",
+        "SPONS_DFE_MAIL_US_ADDRESS1": "1836 GRANT ST",
+        "SPONS_DFE_MAIL_US_ADDRESS2": "",
+        "SPONS_DFE_MAIL_US_ZIP": "80203",
+        "SPONS_DFE_EIN": "742497109",
+        "SPONS_DFE_PHONE_NUM": "3038615005",
+        "ADMIN_SIGNED_NAME": "STEPHANIE DREILING",
+        "SPONS_SIGNED_NAME": "STEPHANIE DREILING",
+        "FORM_PLAN_YEAR_BEGIN_DATE": "2020-01-01",
+        "FORM_TAX_PRD": "2020-12-31",
+        "sector": "Health Care And Social Assistance",
+        "sub_sector_1": "Social AssistanceT",
+        "sub_sector_2": "Individual And Family ServicesT",
+        "SPONS_DFE_MAIL_US_CITY": "DENVER",
+        "SPONS_DFE_MAIL_US_STATE": "CO",
+        "plan_type": "Multiemployer Plan",
+        "PLAN_EFF_DATE": "2009-01-01",
+        "plan_catagory": "Defined Contribution",
+        "TYPE_PENSION_BNFT_CODE": "2F2G2M2T",
+        "TYPE_WELFARE_BNFT_CODE": "",
+        "YEAR": "2020",
+        "ASSETS": "0"
+    }
+]
 </pre>
