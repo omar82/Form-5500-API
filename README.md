@@ -9,10 +9,13 @@ Further information can be found on <tt>https://www.data-mining.co.uk</tt>
 The base URL and patters is as follows;
 
 <tt>https://www.data-mining.co.uk/api/{API_KEY}/{EIN}</tt>
+
 <tt>API_KEY: 85c937c37e91d24c55ff4b47435dec9f</tt>
+
 <tt>EIN: Employer Identification Number</tt>
 
 EXAMPLE:
+
 <tt>https://data-mining.co.uk/api/7c42774df07cf3e08e52708603a9731c/742497109</tt>
 
 
